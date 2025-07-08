@@ -5,9 +5,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function letterExtracted(array,letter){
+  const firstLetter = []
+  for(let i = 0; i < array.length; i++){
+      const word = array[i]
+    if(word.startsWith(letter)){
+      firstLetter.push(word)
+    }
+  }
+  return firstLetter
+}
+
+const letters = `A`
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(letterExtracted(names,letters))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
