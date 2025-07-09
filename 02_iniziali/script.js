@@ -9,9 +9,7 @@ function letterExtracted(array){
   const firstLetter = []
   for(let i = 0; i < array.length; i++){
       const word = array[i]
-    if(word.length > 0){
       firstLetter.push(word[0])
-    }
   }
   return firstLetter
 }

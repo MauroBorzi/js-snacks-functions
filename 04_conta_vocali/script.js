@@ -10,7 +10,7 @@ function contaVocali(text) {
   for (let i = 0; i < text.length; i++) {
       const vocale = text[i]
     if (vocali.includes(vocale)) {
-      numeroVocali += +1
+      numeroVocali++
     }
   }
   return numeroVocali;

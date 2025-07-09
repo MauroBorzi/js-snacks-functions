@@ -9,14 +9,14 @@ function letterExtracted(array,letter){
   const firstLetter = []
   for(let i = 0; i < array.length; i++){
       const word = array[i]
-    if(word.startsWith(letter)){
+    if(word[0].toLowerCase() === letter.toLowerCase()){
       firstLetter.push(word)
     }
   }
   return firstLetter
 }
 
-const letters = `A`
+const letters = `a`
 
 // Invoca la funzione qui e stampa il risultato in console
 
